@@ -1,9 +1,9 @@
 # Is Helper
 
-This is a collection of static helpers that encapsulate basic
-"determining" functions that are run all the time in JavaScript.
-Some of these have at one point or another been in the Node engine
-itself but have moved in and out depending on versioning.
+This is a collection of static helpers that encapsulate basic "determining"
+functions that are run all the time in JavaScript. Some of these have at one
+point or another been in the Node engine itself but have moved in and out
+depending on versioning.
 
 For example...this is quite common:
 
@@ -27,7 +27,7 @@ import { IsHelper } from "@withonevision/is-helper"
 if (IsHelper.isBoolean(value))
 ```
 
-This will not only check if the value is boolean, but will also
-check if the value is a number equal to 0 for false or 1 for true.
-It will also check if the value is a string and equal to anything
-that would be considered "truthy" ("Y/N", "true/false", etc.)
+This will not only check if the value is boolean, but will also check if the
+value is a number equal to 0 for false or 1 for true. It will also check if the
+value is a string and equal to anything that would be considered "truthy"
+("Y/N", "true/false", etc.)
