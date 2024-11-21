@@ -1,3 +1,9 @@
+/** Encapsulating class for all is-checkers.  All methods
+ * below this are static so there does not need to be any
+ * references to constructors.  This class is meant to be
+ * used as a utility class for checking the type of unknown
+ * values.  This class is not meant to be instantiated.
+ */
 export class IsHelper {
   /** Determine whether any given unknown value is of type array.
    * Will return false if the value is null or undefined.
