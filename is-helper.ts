@@ -1,7 +1,3 @@
-/**
- * This is the main class for the IsHelper.
- * @module IsHelper
- */
 export class IsHelper {
   /** Determine whether any given unknown value is of type array.
    * Will return false if the value is null or undefined.
