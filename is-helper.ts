@@ -4,7 +4,7 @@
  * used as a utility class for checking the type of unknown
  * values.  This class is not meant to be instantiated.
  */
-export class IsHelper {
+export default class IsHelper {
   /** Determine whether any given unknown value is of type array.
    * Will return false if the value is null or undefined.
    */
