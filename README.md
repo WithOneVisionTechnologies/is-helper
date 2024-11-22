@@ -14,7 +14,7 @@ if (value === undefined or value === null)
 The is-helper provides the functionality:
 
 ```typescript
-import { IsHelper } from "@withonevision/is-helper"
+import IsHelper from "@withonevision/is-helper"
 
 if (IsHelper.isNullOrUndefined(value))
 ```
@@ -22,7 +22,7 @@ if (IsHelper.isNullOrUndefined(value))
 The is-helper also adds functionality to certain things like:
 
 ```typescript
-import { IsHelper } from "@withonevision/is-helper"
+import IsHelper from "@withonevision/is-helper"
 
 if (IsHelper.isBoolean(value))
 ```
