@@ -13,7 +13,13 @@ export default class IsHelper {
       return false;
     }
 
-    return Array.isArray(value);
+    return Array.isArray(value) || value instanceof Float64Array ||
+      value instanceof Float32Array || value instanceof Float16Array ||
+      value instanceof Int8Array || value instanceof Int16Array ||
+      value instanceof Int32Array || value instanceof Uint8Array ||
+      value instanceof Uint16Array || value instanceof Uint32Array ||
+      value instanceof Uint8ClampedArray || value instanceof BigInt64Array ||
+      value instanceof BigUint64Array;
   };
 
   /** Determine whether any given unknown value can be converted into a boolean
@@ -26,7 +32,8 @@ export default class IsHelper {
       !IsHelper.isNullOrUndefined(value) &&
       ((typeof value === "boolean" && (value === true || value === false)) ||
         (typeof value === "string" &&
-          (value === "true" || value === "false")) ||
+          (value.toLowerCase() === "true" ||
+            value.toLowerCase() === "false")) ||
         (typeof value === "string" &&
           (value as string).toLowerCase() === "y") ||
         (typeof value === "string" &&
@@ -35,6 +42,10 @@ export default class IsHelper {
           (value as string).toLowerCase() === "yes") ||
         (typeof value === "string" &&
           (value as string).toLowerCase() === "no") ||
+        (typeof value === "string" &&
+          (value as string) === "1") ||
+        (typeof value === "string" &&
+          (value as string) === "0") ||
         value === 1 ||
         value === 0)
     );
@@ -51,10 +62,13 @@ export default class IsHelper {
 
     return (
       (typeof value === "boolean" && value === true) ||
-      (typeof value === "string" && value === "true") ||
+      (typeof value === "string" &&
+        (value as string).toLowerCase() === "true") ||
       (typeof value === "string" && (value as string).toLowerCase() === "y") ||
       (typeof value === "string" &&
         (value as string).toLowerCase() === "yes") ||
+      (typeof value === "string" &&
+        (value as string).toLowerCase() === "1") ||
       (value as unknown) === 1
     );
   };
@@ -145,10 +159,6 @@ export default class IsHelper {
       return false;
     }
 
-    if (Number.isNaN(Number.parseFloat(`${value}`))) {
-      return false;
-    }
-
     if (typeof value === "number") {
       return true;
     }
@@ -161,7 +171,7 @@ export default class IsHelper {
       return false;
     }
 
-    const regex = /^[0-9]*$/g;
+    const regex = /^\-{0,1}\d*\.{0,1}\d{0,2}$/g;
 
     return regex.test(String(value));
   };
@@ -214,9 +224,9 @@ export default class IsHelper {
    * of object. */
   public static isObject = (value: unknown): value is object => {
     return (
-      !IsHelper.isNull(value) &&
-      (typeof value === "object" ||
-        IsHelper.isFunction(value) ||
+      !IsHelper.isNullOrUndefined(value) &&
+      (typeof value === "object" &&
+        !IsHelper.isFunction(value) &&
         Object.prototype.toString.call(value) === "[object Object]")
     );
   };
