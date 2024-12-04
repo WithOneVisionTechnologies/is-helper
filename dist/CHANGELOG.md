@@ -1,11 +1,3 @@
-# [1.2.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.1.0...v1.2.0) (2024-12-04)
-
-
-### Features
-
-* **repo:** Fixing deployment. ([95e8680](https://github.com/WithOneVisionTechnologies/is-helper/commit/95e8680bf23305d6d713f1e501446ab6fcecec13))
-* **repo:** Fixing deployments and marking for 1.2.x ([8025d67](https://github.com/WithOneVisionTechnologies/is-helper/commit/8025d67025ff6c164cbc2a01f29bf934be97afa1))
-
 # [1.1.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.0.0...v1.1.0) (2024-12-04)
 
 
