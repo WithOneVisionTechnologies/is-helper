@@ -40,6 +40,36 @@
       ],
       "plugins": [
          "@semantic-release/commit-analyzer",
+         "@semantic-release/release-notes-generator",
+         [
+            "@semantic-release/changelog",
+            {
+               "changelogFile": "CHANGELOG.md"
+            }
+         ],
+         [
+            "semantic-release-replace-plugin",
+            {
+               "replacements": [
+                  {
+                     "files": [
+                        "./dist/package.json"
+                     ],
+                     "from": "dist/index",
+                     "to": "index",
+                     "results": [
+                        {
+                           "file": "./dist/package.json",
+                           "hasChanged": true,
+                           "numMatches": 3,
+                           "numReplacements": 3
+                        }
+                     ],
+                     "countMatches": true
+                  }
+               ]
+            }
+         ],
          [
             "semantic-release-replace-plugin",
             {
@@ -63,13 +93,6 @@
                ]
             }
          ],
-         "@semantic-release/release-notes-generator",
-         [
-            "@semantic-release/changelog",
-            {
-               "changelogFile": "CHANGELOG.md"
-            }
-         ],
          [
             "@semantic-release/npm",
             {
@@ -87,9 +110,7 @@
             {
                "assets": [
                   "CHANGELOG.md",
-                  "README.md",
                   "package.json",
-                  "dist/**/*",
                   "jsr.json"
                ]
             }
@@ -99,8 +120,8 @@
             {
                "assets": [
                   {
-                     "path": "dist/*.{js,mjs,d.ts}",
-                     "label": "CSS distribution"
+                     "path": "dist/*.{js,mjs,d.ts,.json}",
+                     "label": "JavaScript Distribution"
                   }
                ]
             }
