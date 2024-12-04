@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.0.0...v1.1.0) (2024-12-04)
+
+
+### Features
+
+* **repo:** Working on semantic release ([cd67fbd](https://github.com/WithOneVisionTechnologies/is-helper/commit/cd67fbd3eaa3657acc9dab4775d943a1cd466e3f))
+
 # 1.0.0 (2024-12-04)
 
 
