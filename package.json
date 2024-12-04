@@ -16,6 +16,7 @@
       "@semantic-release/changelog": "^6.0.3",
       "@semantic-release/commit-analyzer": "^13.0.0",
       "@semantic-release/git": "^10.0.1",
+      "@semantic-release/github": "^11.0.1",
       "@semantic-release/npm": "^12.0.1",
       "@semantic-release/release-notes-generator": "^14.0.1",
       "@vitest/coverage-v8": "^2.1.8",
@@ -28,6 +29,7 @@
       "rollup-plugin-dts": "^6.1.1",
       "rollup-plugin-esbuild": "^6.1.1",
       "semantic-release": "^24.2.0",
+      "semantic-release-replace-plugin": "^1.2.7",
       "typescript": "^5.7.2",
       "typescript-eslint": "^8.17.0",
       "vitest": "^2.1.8"
@@ -38,6 +40,29 @@
       ],
       "plugins": [
          "@semantic-release/commit-analyzer",
+         [
+            "semantic-release-replace-plugin",
+            {
+               "replacements": [
+                  {
+                     "files": [
+                        "jsr.json"
+                     ],
+                     "from": "\"version\": \".*\"",
+                     "to": "\"version\": \"${nextRelease.version}\"",
+                     "results": [
+                        {
+                           "file": "jsr.json",
+                           "hasChanged": true,
+                           "numMatches": 1,
+                           "numReplacements": 1
+                        }
+                     ],
+                     "countMatches": true
+                  }
+               ]
+            }
+         ],
          "@semantic-release/release-notes-generator",
          [
             "@semantic-release/changelog",
@@ -64,7 +89,19 @@
                   "CHANGELOG.md",
                   "README.md",
                   "package.json",
-                  "dist/**/*"
+                  "dist/**/*",
+                  "jsr.json"
+               ]
+            }
+         ],
+         [
+            "@semantic-release/github",
+            {
+               "assets": [
+                  {
+                     "path": "dist/*.{js,mjs,d.ts}",
+                     "label": "CSS distribution"
+                  }
                ]
             }
          ],
