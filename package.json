@@ -7,7 +7,7 @@
    "module": "dist/index.mjs",
    "types": "dist/index.d.ts",
    "scripts": {
-      "build": "rollup -c && cpy './package.json' './dist/'",
+      "build": "rollup -c && cpy './package.json' './dist/' && cpy './README.md' './dist/' && cpy './CHANGELOG.md' './dist/'",
       "test": "vitest --coverage"
    },
    "devDependencies": {
@@ -23,7 +23,7 @@
       "esbuild": "^0.24.0",
       "eslint": "^9.16.0",
       "eslint-config-prettier": "^9.1.0",
-      "prettier": "^3.4.1",
+      "prettier": "^3.4.2",
       "rollup": "^4.28.0",
       "rollup-plugin-dts": "^6.1.1",
       "rollup-plugin-esbuild": "^6.1.1",
@@ -49,6 +49,12 @@
             "@semantic-release/npm",
             {
                "pkgRoot": "dist"
+            }
+         ],
+         [
+            "@semantic-release/npm",
+            {
+               "npmPublish": false
             }
          ],
          [
