@@ -1,3 +1,13 @@
+## [1.2.1](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.0...v1.2.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Adding releases to semantic-release ([3f287a8](https://github.com/WithOneVisionTechnologies/is-helper/commit/3f287a89468ace0d046b961f0fc479c8ff54d412))
+* **repo:** Fix for GH token. ([2c1c76e](https://github.com/WithOneVisionTechnologies/is-helper/commit/2c1c76e417f6a052f8cda98b010415fc8204bd96))
+* **repo:** More deployment fixes. ([fab3b3e](https://github.com/WithOneVisionTechnologies/is-helper/commit/fab3b3ed600ff2ae103dd9e4aa7908ce1a777d04))
+* **repo:** Working on deployment ([b58b8ca](https://github.com/WithOneVisionTechnologies/is-helper/commit/b58b8ca4482d045e0bd5dda160f3d64978c354f8))
+
 # [1.2.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.1.0...v1.2.0) (2024-12-04)
 
 
