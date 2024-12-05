@@ -1,3 +1,11 @@
+## [1.2.4](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.3...v1.2.4) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Adding exclusions to vitest ([dc119cf](https://github.com/WithOneVisionTechnologies/is-helper/commit/dc119cf5e04f67cb877db5efadf5134c6682a267))
+* **repo:** Fleshing out package.json and other fixes. ([924933a](https://github.com/WithOneVisionTechnologies/is-helper/commit/924933a1f92e43d6784bcfe80edf07c563740c84))
+
 ## [1.2.3](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.2...v1.2.3) (2024-12-05)
 
 
