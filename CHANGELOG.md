@@ -1,3 +1,11 @@
+## [1.2.5](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.4...v1.2.5) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Fixing changelog generation ([5cb1447](https://github.com/WithOneVisionTechnologies/is-helper/commit/5cb1447dabea5025c49c4d6c58fee5a5e3a6a8ea))
+* **repo:** Making sure changelog gets updated in dist ([4b5b72c](https://github.com/WithOneVisionTechnologies/is-helper/commit/4b5b72cd6d8c7b5cffe8907bc8264f8387bd15d1))
+
 ## [1.2.4](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.3...v1.2.4) (2024-12-05)
 
 

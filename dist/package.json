@@ -1,6 +1,6 @@
 {
    "name": "@withonevision/is-helper",
-   "version": "1.2.4",
+   "version": "1.2.5",
    "description": "A collection of \"is\"-style helpers to help solidify if something \"is\" something else. Has no dependencies and uses only raw JavaScript methodology.",
    "homepage": "https://github.com/WithOneVisionTechnologies/is-helper",
    "license": "MIT",
@@ -9,6 +9,10 @@
       "name": "With One Vision Technologies",
       "email": "developers@withone.vison",
       "url": "https://www.withone.vision"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/WithOneVisionTechnologies/is-helper"
    },
    "type": "module",
    "main": "index.js",
