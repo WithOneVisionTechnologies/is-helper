@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.6...v1.3.0) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Fix for semantic versioning replaces ([9847e9d](https://github.com/WithOneVisionTechnologies/is-helper/commit/9847e9d58fbb670fe97165f47aecb2eca1627b63))
+
+
+### Features
+
+* **repo:** Fixes for exporting ESM and CommonJS ([bb289c1](https://github.com/WithOneVisionTechnologies/is-helper/commit/bb289c10fe87894478d3e5a9baf6b1e8fba70452))
+
 ## [1.2.6](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.5...v1.2.6) (2024-12-05)
 
 
