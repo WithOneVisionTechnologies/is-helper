@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.5...v1.2.6) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Fixing coverage status. ([8562214](https://github.com/WithOneVisionTechnologies/is-helper/commit/85622140987d73ff2abc05c2171fe50acb4d0b4a))
+
 ## [1.2.5](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.4...v1.2.5) (2024-12-05)
 
 
