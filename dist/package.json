@@ -3,9 +3,9 @@
    "version": "1.2.2",
    "license": "MIT",
    "type": "module",
-   "main": "dist/index.js",
-   "module": "dist/index.mjs",
-   "types": "dist/index.d.ts",
+   "main": "index.js",
+   "module": "index.mjs",
+   "types": "index.d.ts",
    "scripts": {
       "build": "rollup -c && cpy './package.json' './dist/' && cpy './README.md' './dist/' && cpy './CHANGELOG.md' './dist/'",
       "test": "vitest --coverage"
