@@ -15,8 +15,11 @@
       "url": "https://github.com/WithOneVisionTechnologies/is-helper"
    },
    "type": "module",
-   "main": "dist/index.js",
-   "module": "dist/index.mjs",
+   "main": "./dist/index.js",
+   "exports": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+   },
    "types": "dist/index.d.ts",
    "publishConfig": {
       "access": "public"
