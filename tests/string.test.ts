@@ -30,6 +30,7 @@ describe("isString", () => {
       it("should return true for a string with a tab and newline character and whitespace", () => {
          expect(IsHelper.isString("\t\n ")).toBe(true);
       });
+
       it("should return true for a string with a value", () => {
          expect(IsHelper.isString("a")).toBe(true);
       });
