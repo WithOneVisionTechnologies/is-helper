@@ -31,3 +31,5 @@ This will not only check if the value is boolean, but will also check if the
 value is a number equal to 0 for false or 1 for true. It will also check if the
 value is a string and equal to anything that would be considered "truthy"
 ("Y/N", "true/false", etc.)
+
+For a full list of functions, see the [jsr.io documentation](https://jsr.io/@withonevision/is-helper/doc/~/IsHelper)

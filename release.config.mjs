@@ -66,7 +66,7 @@ export default {
       [
          "@semantic-release/git",
          {
-            assets: ["CHANGELOG.md", "package.json", "jsr.json"],
+            assets: ["CHANGELOG.md", "package.json", "jsr.json", "dist/**/*", "coverage/**/*"],
          },
       ],
       [
@@ -74,8 +74,16 @@ export default {
          {
             assets: [
                {
-                  path: "dist/*.{js,mjs,d.ts,.json}",
-                  label: "JavaScript Distribution",
+                  path: "dist/index.js",
+                  label: "JavaScript Distribution (CommonJS)",
+               },
+               {
+                  path: "dist/index.mjs",
+                  label: "JavaScript Distribution (ESM)",
+               },
+               {
+                  path: "dist/index.d.ts",
+                  label: "JavaScript Distribution (Types)",
                },
             ],
          },
