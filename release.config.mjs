@@ -27,8 +27,8 @@ export default {
                      {
                         file: "./dist/package.json",
                         hasChanged: true,
-                        numMatches: 3,
-                        numReplacements: 3,
+                        numMatches: 4,
+                        numReplacements: 4,
                      },
                   ],
                   countMatches: true,
