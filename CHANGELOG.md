@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.3.0...v1.3.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Taking out unnecessary JS dist. ([50672ff](https://github.com/WithOneVisionTechnologies/is-helper/commit/50672ffac870e642485c350c78f038073fe4c1d9))
+
 # [1.3.0](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.6...v1.3.0) (2024-12-05)
 
 
