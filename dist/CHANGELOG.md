@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.1...v1.2.2) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Fixing NPM access and github checkins ([d07762e](https://github.com/WithOneVisionTechnologies/is-helper/commit/d07762e14ae113edbb95ded524e731675b9fe523))
+
 ## [1.2.1](https://github.com/WithOneVisionTechnologies/is-helper/compare/v1.2.0...v1.2.1) (2024-12-05)
 
 
